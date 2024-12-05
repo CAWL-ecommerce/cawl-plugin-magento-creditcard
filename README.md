@@ -11,7 +11,7 @@ To install this solution, you may use
 [adobe commerce marketplace](https://marketplace.magento.com/worldline-module-magento-payment.html)
 or install it from the GitHub.
 
-This solution is also included into [main plugin for adobe commerce](https://github.com/wl-online-payments-direct/plugin-magento).
+This solution is also included into [main plugin for adobe commerce](https://github.com/Worldline-Plugins/cawl-plugin-magento).
 ### Change log:
 
 #### 1.0.0
