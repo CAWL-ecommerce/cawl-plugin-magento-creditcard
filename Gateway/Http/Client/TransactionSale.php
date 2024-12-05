@@ -1,14 +1,14 @@
 <?php
 declare(strict_types=1);
 
-namespace Worldline\CreditCard\Gateway\Http\Client;
+namespace Cawl\CreditCard\Gateway\Http\Client;
 
 use Magento\Framework\Exception\LocalizedException;
 use OnlinePayments\Sdk\Domain\PaymentResponse;
 use Psr\Log\LoggerInterface;
-use Worldline\CreditCard\Gateway\Request\PaymentDataBuilder;
-use Worldline\PaymentCore\Api\Service\Payment\GetPaymentServiceInterface;
-use Worldline\PaymentCore\Gateway\Http\Client\AbstractTransaction;
+use Cawl\CreditCard\Gateway\Request\PaymentDataBuilder;
+use Cawl\PaymentCore\Api\Service\Payment\GetPaymentServiceInterface;
+use Cawl\PaymentCore\Gateway\Http\Client\AbstractTransaction;
 
 class TransactionSale extends AbstractTransaction
 {

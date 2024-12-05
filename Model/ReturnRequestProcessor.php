@@ -1,16 +1,16 @@
 <?php
 declare(strict_types=1);
 
-namespace Worldline\CreditCard\Model;
+namespace Cawl\CreditCard\Model;
 
 use Magento\Sales\Model\OrderFactory;
-use Worldline\PaymentCore\Api\Data\PaymentInterface;
-use Worldline\PaymentCore\Api\OrderStateManagerInterface;
-use Worldline\PaymentCore\Api\Payment\PaymentIdFormatterInterface;
-use Worldline\PaymentCore\Api\QuoteResourceInterface;
-use Worldline\PaymentCore\Api\SessionDataManagerInterface;
-use Worldline\PaymentCore\Model\OrderState\OrderState;
-use Worldline\PaymentCore\Model\QuotePayment\QuotePaymentRepository;
+use Cawl\PaymentCore\Api\Data\PaymentInterface;
+use Cawl\PaymentCore\Api\OrderStateManagerInterface;
+use Cawl\PaymentCore\Api\Payment\PaymentIdFormatterInterface;
+use Cawl\PaymentCore\Api\QuoteResourceInterface;
+use Cawl\PaymentCore\Api\SessionDataManagerInterface;
+use Cawl\PaymentCore\Model\OrderState\OrderState;
+use Cawl\PaymentCore\Model\QuotePayment\QuotePaymentRepository;
 
 class ReturnRequestProcessor
 {

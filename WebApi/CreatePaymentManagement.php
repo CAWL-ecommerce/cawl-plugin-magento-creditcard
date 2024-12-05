@@ -1,13 +1,13 @@
 <?php
 declare(strict_types=1);
 
-namespace Worldline\CreditCard\WebApi;
+namespace Cawl\CreditCard\WebApi;
 
 use Magento\Framework\Exception\LocalizedException;
 use Magento\Quote\Api\Data\AddressInterface;
 use Magento\Quote\Api\Data\PaymentInterface;
-use Worldline\CreditCard\Api\CreatePaymentManagementInterface;
-use Worldline\PaymentCore\Api\WebApi\Checkout\BaseCreatePaymentManagementInterface;
+use Cawl\CreditCard\Api\CreatePaymentManagementInterface;
+use Cawl\PaymentCore\Api\WebApi\Checkout\BaseCreatePaymentManagementInterface;
 
 class CreatePaymentManagement implements CreatePaymentManagementInterface
 {

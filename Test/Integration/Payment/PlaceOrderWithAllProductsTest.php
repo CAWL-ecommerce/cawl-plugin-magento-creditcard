@@ -1,18 +1,18 @@
 <?php
 declare(strict_types=1);
 
-namespace Worldline\CreditCard\Test\Integration\Payment;
+namespace Cawl\CreditCard\Test\Integration\Payment;
 
 use Magento\Customer\Model\Session;
 use Magento\Quote\Api\Data\CartInterface;
 use Magento\Quote\Model\Quote\Address;
 use Magento\Sales\Api\Data\OrderInterfaceFactory;
 use Magento\TestFramework\Helper\Bootstrap;
-use Worldline\CreditCard\Ui\ConfigProvider;
-use Worldline\PaymentCore\Api\QuoteResourceInterface;
-use Worldline\PaymentCore\Api\Test\Infrastructure\ServiceStubSwitcherInterface;
-use Worldline\PaymentCore\Api\Test\Infrastructure\WebhookStubSenderInterface;
-use Worldline\PaymentCore\Infrastructure\StubData\Webhook\Authorization;
+use Cawl\CreditCard\Ui\ConfigProvider;
+use Cawl\PaymentCore\Api\QuoteResourceInterface;
+use Cawl\PaymentCore\Api\Test\Infrastructure\ServiceStubSwitcherInterface;
+use Cawl\PaymentCore\Api\Test\Infrastructure\WebhookStubSenderInterface;
+use Cawl\PaymentCore\Infrastructure\StubData\Webhook\Authorization;
 
 /**
  * Test case about place order with all type of products

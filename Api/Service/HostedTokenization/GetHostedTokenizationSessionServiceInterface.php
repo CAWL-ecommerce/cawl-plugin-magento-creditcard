@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace Worldline\CreditCard\Api\Service\HostedTokenization;
+namespace Cawl\CreditCard\Api\Service\HostedTokenization;
 
 use Magento\Framework\Exception\LocalizedException;
 use OnlinePayments\Sdk\Domain\GetHostedTokenizationResponse;

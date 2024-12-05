@@ -1,14 +1,14 @@
 <?php
 declare(strict_types=1);
 
-namespace Worldline\CreditCard\Ui;
+namespace Cawl\CreditCard\Ui;
 
 use Magento\Framework\App\Area;
 use Magento\Framework\View\Asset\Source as AssetSource;
-use Worldline\CreditCard\Gateway\Config\Config;
-use Worldline\CreditCard\Model\Config\Source\CreditCardTypeOptions;
-use Worldline\PaymentCore\Api\Ui\PaymentIconsProviderInterface;
-use Worldline\PaymentCore\Api\Ui\PaymentProductsProviderInterface;
+use Cawl\CreditCard\Gateway\Config\Config;
+use Cawl\CreditCard\Model\Config\Source\CreditCardTypeOptions;
+use Cawl\PaymentCore\Api\Ui\PaymentIconsProviderInterface;
+use Cawl\PaymentCore\Api\Ui\PaymentProductsProviderInterface;
 
 class PaymentIconsProvider
 {

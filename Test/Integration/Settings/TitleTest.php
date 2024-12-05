@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace Worldline\CreditCard\Test\Integration\Settings;
+namespace Cawl\CreditCard\Test\Integration\Settings;
 
 use Magento\Payment\Model\MethodInterface;
 use Magento\Payment\Model\MethodList;
@@ -35,16 +35,16 @@ class TitleTest extends TestCase
     /**
      * Steps:
      * 1) Payment enabled=yes
-     * 2) Set title to Credit Card (Worldline Online Payments)+++++
+     * 2) Set title to Credit Card (Cawl Online Payments)+++++
      * 3) Go to checkout
-     * Expected result: Payment Method is available with title "Credit Card (Worldline Online Payments)+++++"
+     * Expected result: Payment Method is available with title "Credit Card (Cawl Online Payments)+++++"
      *
      * @magentoDataFixture Magento/Sales/_files/quote.php
      * @magentoConfigFixture default/currency/options/allow EUR
      * @magentoConfigFixture default/currency/options/base EUR
      * @magentoConfigFixture default/currency/options/default EUR
      * @magentoConfigFixture current_store payment/worldline_cc/active 1
-     * @magentoConfigFixture current_store payment/worldline_cc/title Credit Card (Worldline Online Payments)+++++
+     * @magentoConfigFixture current_store payment/worldline_cc/title Credit Card (Cawl Online Payments)+++++
      * @magentoDbIsolation enabled
      */
     public function testFirstInOrder(): void

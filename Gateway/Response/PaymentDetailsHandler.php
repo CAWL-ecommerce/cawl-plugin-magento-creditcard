@@ -1,12 +1,12 @@
 <?php
 declare(strict_types=1);
 
-namespace Worldline\CreditCard\Gateway\Response;
+namespace Cawl\CreditCard\Gateway\Response;
 
 use Magento\Payment\Gateway\Response\HandlerInterface;
 use Magento\Sales\Api\Data\OrderPaymentInterface;
 use OnlinePayments\Sdk\Domain\PaymentResponse;
-use Worldline\PaymentCore\Api\SubjectReaderInterface;
+use Cawl\PaymentCore\Api\SubjectReaderInterface;
 
 class PaymentDetailsHandler implements HandlerInterface
 {

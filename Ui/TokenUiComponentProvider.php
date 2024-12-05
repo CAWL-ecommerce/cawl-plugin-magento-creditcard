@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace Worldline\CreditCard\Ui;
+namespace Cawl\CreditCard\Ui;
 
 use Magento\Framework\Serialize\Serializer\Json;
 use Magento\Vault\Api\Data\PaymentTokenInterface;

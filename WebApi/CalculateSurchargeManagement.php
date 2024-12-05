@@ -1,18 +1,18 @@
 <?php
 declare(strict_types=1);
 
-namespace Worldline\CreditCard\WebApi;
+namespace Cawl\CreditCard\WebApi;
 
 use Magento\Framework\Exception\LocalizedException;
 use Magento\Framework\Exception\NoSuchEntityException;
 use Magento\Quote\Api\Data\CartInterface;
 use OnlinePayments\Sdk\Domain\Surcharge;
-use Worldline\CreditCard\Api\CalculateSurchargeManagementInterface;
-use Worldline\PaymentCore\Api\AmountFormatterInterface;
-use Worldline\PaymentCore\Api\Service\CalculateSurchargeRequestBuilderInterface;
-use Worldline\PaymentCore\Api\SurchargingQuoteManagerInterface;
-use Worldline\PaymentCore\Api\WebApi\Checkout\QuoteManagerInterface;
-use Worldline\PaymentCore\Api\Service\Services\SurchargeCalculationServiceInterface;
+use Cawl\CreditCard\Api\CalculateSurchargeManagementInterface;
+use Cawl\PaymentCore\Api\AmountFormatterInterface;
+use Cawl\PaymentCore\Api\Service\CalculateSurchargeRequestBuilderInterface;
+use Cawl\PaymentCore\Api\SurchargingQuoteManagerInterface;
+use Cawl\PaymentCore\Api\WebApi\Checkout\QuoteManagerInterface;
+use Cawl\PaymentCore\Api\Service\Services\SurchargeCalculationServiceInterface;
 
 class CalculateSurchargeManagement implements CalculateSurchargeManagementInterface
 {

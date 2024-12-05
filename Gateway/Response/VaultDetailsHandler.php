@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace Worldline\CreditCard\Gateway\Response;
+namespace Cawl\CreditCard\Gateway\Response;
 
 use Exception;
 use Magento\Payment\Gateway\Response\HandlerInterface;
@@ -11,9 +11,9 @@ use Magento\Sales\Api\Data\OrderPaymentExtensionInterfaceFactory;
 use Magento\Vault\Api\Data\PaymentTokenFactoryInterface;
 use Magento\Vault\Api\Data\PaymentTokenInterface;
 use OnlinePayments\Sdk\Domain\PaymentResponse;
-use Worldline\PaymentCore\Api\CardDateInterface;
-use Worldline\PaymentCore\Api\Config\WorldlineConfigInterface;
-use Worldline\PaymentCore\Api\SubjectReaderInterface;
+use Cawl\PaymentCore\Api\CardDateInterface;
+use Cawl\PaymentCore\Api\Config\WorldlineConfigInterface;
+use Cawl\PaymentCore\Api\SubjectReaderInterface;
 
 class VaultDetailsHandler implements HandlerInterface
 {

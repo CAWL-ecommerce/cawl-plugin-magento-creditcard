@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace Worldline\CreditCard\Service\HostedTokenization;
+namespace Cawl\CreditCard\Service\HostedTokenization;
 
 use Magento\Authorization\Model\UserContextInterface;
 use Magento\Framework\Event\ManagerInterface;
@@ -10,8 +10,8 @@ use Magento\Vault\Api\Data\PaymentTokenInterface;
 use Magento\Vault\Model\PaymentTokenManagement;
 use OnlinePayments\Sdk\Domain\CreateHostedTokenizationRequest;
 use OnlinePayments\Sdk\Domain\CreateHostedTokenizationRequestFactory;
-use Worldline\CreditCard\Gateway\Config\Config;
-use Worldline\CreditCard\Ui\ConfigProvider;
+use Cawl\CreditCard\Gateway\Config\Config;
+use Cawl\CreditCard\Ui\ConfigProvider;
 
 class CreateRequestBodyBuilder
 {

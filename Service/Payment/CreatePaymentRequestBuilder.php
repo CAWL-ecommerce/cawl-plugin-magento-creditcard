@@ -1,15 +1,15 @@
 <?php
 declare(strict_types=1);
 
-namespace Worldline\CreditCard\Service\Payment;
+namespace Cawl\CreditCard\Service\Payment;
 
 use Magento\Quote\Api\Data\CartInterface;
 use OnlinePayments\Sdk\Domain\CreatePaymentRequest;
 use OnlinePayments\Sdk\Domain\CreatePaymentRequestFactory;
-use Worldline\CreditCard\Service\CreatePaymentRequest\CardPaymentMethodSIDBuilder;
-use Worldline\PaymentCore\Api\Config\GeneralSettingsConfigInterface;
-use Worldline\PaymentCore\Api\Service\CreateRequest\Order\SurchargeDataBuilderInterface;
-use Worldline\PaymentCore\Service\CreateRequest\Order\GeneralDataBuilder;
+use Cawl\CreditCard\Service\CreatePaymentRequest\CardPaymentMethodSIDBuilder;
+use Cawl\PaymentCore\Api\Config\GeneralSettingsConfigInterface;
+use Cawl\PaymentCore\Api\Service\CreateRequest\Order\SurchargeDataBuilderInterface;
+use Cawl\PaymentCore\Service\CreateRequest\Order\GeneralDataBuilder;
 
 class CreatePaymentRequestBuilder
 {

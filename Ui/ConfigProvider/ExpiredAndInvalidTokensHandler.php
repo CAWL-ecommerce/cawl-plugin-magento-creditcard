@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace Worldline\CreditCard\Ui\ConfigProvider;
+namespace Cawl\CreditCard\Ui\ConfigProvider;
 
 use Exception;
 use Magento\Authorization\Model\UserContextInterface;

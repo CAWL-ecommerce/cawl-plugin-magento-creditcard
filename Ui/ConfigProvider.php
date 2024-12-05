@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace Worldline\CreditCard\Ui;
+namespace Cawl\CreditCard\Ui;
 
 use Magento\Checkout\Model\ConfigProviderInterface;
 use Magento\Checkout\Model\Session;
@@ -9,10 +9,10 @@ use Magento\Framework\Exception\LocalizedException;
 use Magento\Framework\Exception\NoSuchEntityException;
 use Magento\Store\Model\StoreManagerInterface;
 use Psr\Log\LoggerInterface;
-use Worldline\CreditCard\Gateway\Config\Config;
-use Worldline\PaymentCore\Api\Config\GeneralSettingsConfigInterface;
-use Worldline\PaymentCore\Api\QuoteTotalInterface;
-use Worldline\PaymentCore\Api\SurchargingQuoteRepositoryInterface;
+use Cawl\CreditCard\Gateway\Config\Config;
+use Cawl\PaymentCore\Api\Config\GeneralSettingsConfigInterface;
+use Cawl\PaymentCore\Api\QuoteTotalInterface;
+use Cawl\PaymentCore\Api\SurchargingQuoteRepositoryInterface;
 
 /**
  * @SuppressWarnings(PHPMD.CookieAndSessionMisuse)

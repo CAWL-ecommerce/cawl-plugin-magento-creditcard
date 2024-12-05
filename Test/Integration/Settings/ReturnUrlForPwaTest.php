@@ -1,17 +1,17 @@
 <?php
 declare(strict_types=1);
 
-namespace Worldline\CreditCard\Test\Integration\Settings;
+namespace Cawl\CreditCard\Test\Integration\Settings;
 
 use Magento\Framework\App\Area;
 use Magento\Quote\Api\Data\CartInterface;
 use Magento\TestFramework\Helper\Bootstrap;
 use Magento\Framework\App\State;
 use PHPUnit\Framework\TestCase;
-use Worldline\CreditCard\Service\CreatePaymentRequest\CardPaymentMethodSIDBuilder;
-use Worldline\CreditCard\Ui\ConfigProvider;
-use Worldline\PaymentCore\Api\QuoteResourceInterface;
-use Worldline\PaymentCore\Api\Test\Infrastructure\ServiceStubSwitcherInterface;
+use Cawl\CreditCard\Service\CreatePaymentRequest\CardPaymentMethodSIDBuilder;
+use Cawl\CreditCard\Ui\ConfigProvider;
+use Cawl\PaymentCore\Api\QuoteResourceInterface;
+use Cawl\PaymentCore\Api\Test\Infrastructure\ServiceStubSwitcherInterface;
 
 /**
  * Test case for configuration "Custom Return URL"

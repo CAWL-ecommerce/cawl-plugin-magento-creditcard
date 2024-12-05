@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace Worldline\CreditCard\Controller\Returns;
+namespace Cawl\CreditCard\Controller\Returns;
 
 use Magento\Framework\App\Action\Action;
 use Magento\Framework\App\Action\Context;
@@ -9,8 +9,8 @@ use Magento\Framework\App\Action\HttpGetActionInterface;
 use Magento\Framework\Controller\ResultFactory;
 use Magento\Framework\Controller\ResultInterface;
 use Magento\Framework\Exception\LocalizedException;
-use Worldline\CreditCard\Model\ReturnRequestProcessor;
-use Worldline\PaymentCore\Model\Order\RejectOrderException;
+use Cawl\CreditCard\Model\ReturnRequestProcessor;
+use Cawl\PaymentCore\Model\Order\RejectOrderException;
 
 class ReturnThreeDSecure extends Action implements HttpGetActionInterface
 {

@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace Worldline\CreditCard\Setup;
+namespace Cawl\CreditCard\Setup;
 
 use Magento\Config\Model\ResourceModel\Config as ConfigResource;
 use Magento\Config\Model\ResourceModel\Config\Data\CollectionFactory;

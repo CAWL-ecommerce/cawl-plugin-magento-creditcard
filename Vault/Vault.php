@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace Worldline\CreditCard\Vault;
+namespace Cawl\CreditCard\Vault;
 
 use Magento\Framework\Event\ManagerInterface;
 use Magento\Framework\ObjectManagerInterface;
@@ -13,8 +13,8 @@ use Magento\Payment\Model\MethodInterface;
 use Magento\Quote\Api\Data\CartInterface;
 use Magento\Sales\Api\Data\OrderPaymentExtensionInterfaceFactory;
 use Magento\Vault\Api\PaymentTokenManagementInterface;
-use Worldline\CreditCard\Ui\ConfigProvider;
-use Worldline\PaymentCore\Api\VaultValidationInterface;
+use Cawl\CreditCard\Ui\ConfigProvider;
+use Cawl\PaymentCore\Api\VaultValidationInterface;
 
 /**
  * @SuppressWarnings(PHPMD.ExcessiveParameterList)

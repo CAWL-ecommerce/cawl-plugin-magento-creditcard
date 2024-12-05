@@ -1,11 +1,11 @@
 <?php
 declare(strict_types=1);
 
-namespace Worldline\CreditCard\Block\Checkout;
+namespace Cawl\CreditCard\Block\Checkout;
 
 use Magento\Framework\View\Element\Template;
 use Magento\Framework\View\Page\Config;
-use Worldline\PaymentCore\Api\Config\WorldlineConfigInterface;
+use Cawl\PaymentCore\Api\Config\WorldlineConfigInterface;
 
 class Head extends Template
 {

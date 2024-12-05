@@ -1,17 +1,17 @@
 <?php
 declare(strict_types=1);
 
-namespace Worldline\CreditCard\Service\CreatePaymentRequest;
+namespace Cawl\CreditCard\Service\CreatePaymentRequest;
 
 use Magento\Framework\Event\ManagerInterface;
 use Magento\Quote\Api\Data\CartInterface;
 use OnlinePayments\Sdk\Domain\CardPaymentMethodSpecificInput;
 use OnlinePayments\Sdk\Domain\CardPaymentMethodSpecificInputFactory;
-use Worldline\CreditCard\Gateway\Config\Config;
-use Worldline\CreditCard\Gateway\Request\PaymentDataBuilder;
-use Worldline\CreditCard\Ui\ConfigProvider;
-use Worldline\PaymentCore\Api\Config\GeneralSettingsConfigInterface;
-use Worldline\PaymentCore\Api\Service\CreateRequest\ThreeDSecureDataBuilderInterface;
+use Cawl\CreditCard\Gateway\Config\Config;
+use Cawl\CreditCard\Gateway\Request\PaymentDataBuilder;
+use Cawl\CreditCard\Ui\ConfigProvider;
+use Cawl\PaymentCore\Api\Config\GeneralSettingsConfigInterface;
+use Cawl\PaymentCore\Api\Service\CreateRequest\ThreeDSecureDataBuilderInterface;
 
 class CardPaymentMethodSIDBuilder
 {

@@ -1,12 +1,12 @@
 <?php
 declare(strict_types=1);
 
-namespace Worldline\CreditCard\Gateway\Config;
+namespace Cawl\CreditCard\Gateway\Config;
 
 use Magento\Framework\App\Config\ScopeConfigInterface;
 use Magento\Payment\Gateway\Config\Config as PaymentGatewayConfig;
 use Magento\Store\Model\ScopeInterface;
-use Worldline\CreditCard\Ui\ConfigProvider;
+use Cawl\CreditCard\Ui\ConfigProvider;
 
 class Config extends PaymentGatewayConfig
 {

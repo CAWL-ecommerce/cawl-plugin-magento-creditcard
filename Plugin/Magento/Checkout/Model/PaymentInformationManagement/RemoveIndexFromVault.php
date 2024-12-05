@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace Worldline\CreditCard\Plugin\Magento\Checkout\Model\PaymentInformationManagement;
+namespace Cawl\CreditCard\Plugin\Magento\Checkout\Model\PaymentInformationManagement;
 
 use Magento\Checkout\Api\PaymentInformationManagementInterface;
 use Magento\Framework\App\ProductMetadataInterface;

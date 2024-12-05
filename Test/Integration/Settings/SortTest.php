@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace Worldline\CreditCard\Test\Integration\Settings;
+namespace Cawl\CreditCard\Test\Integration\Settings;
 
 use Magento\Payment\Model\MethodInterface;
 use Magento\Payment\Model\MethodList;

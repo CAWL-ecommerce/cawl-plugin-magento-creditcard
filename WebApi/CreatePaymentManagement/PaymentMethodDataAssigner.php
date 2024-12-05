@@ -1,14 +1,14 @@
 <?php
 declare(strict_types=1);
 
-namespace Worldline\CreditCard\WebApi\CreatePaymentManagement;
+namespace Cawl\CreditCard\WebApi\CreatePaymentManagement;
 
 use Magento\Framework\Exception\LocalizedException;
 use Magento\Quote\Api\Data\PaymentInterface;
-use Worldline\CreditCard\Gateway\Request\PaymentDataBuilder;
-use Worldline\PaymentCore\Api\Data\QuotePaymentInterface;
-use Worldline\PaymentCore\Model\DataAssigner\DataAssignerInterface;
-use Worldline\CreditCard\Service\HostedTokenization\GetHostedTokenizationSessionService;
+use Cawl\CreditCard\Gateway\Request\PaymentDataBuilder;
+use Cawl\PaymentCore\Api\Data\QuotePaymentInterface;
+use Cawl\PaymentCore\Model\DataAssigner\DataAssignerInterface;
+use Cawl\CreditCard\Service\HostedTokenization\GetHostedTokenizationSessionService;
 
 class PaymentMethodDataAssigner implements DataAssignerInterface
 {

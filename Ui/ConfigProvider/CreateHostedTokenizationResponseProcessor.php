@@ -1,12 +1,12 @@
 <?php
 declare(strict_types=1);
 
-namespace  Worldline\CreditCard\Ui\ConfigProvider;
+namespace  Cawl\CreditCard\Ui\ConfigProvider;
 
 use Magento\Framework\Exception\LocalizedException;
 use OnlinePayments\Sdk\Domain\CreateHostedTokenizationResponse;
-use Worldline\CreditCard\Service\HostedTokenization\CreateHostedTokenizationSessionService;
-use Worldline\CreditCard\Service\HostedTokenization\CreateRequestBodyBuilder;
+use Cawl\CreditCard\Service\HostedTokenization\CreateHostedTokenizationSessionService;
+use Cawl\CreditCard\Service\HostedTokenization\CreateRequestBodyBuilder;
 
 class CreateHostedTokenizationResponseProcessor
 {

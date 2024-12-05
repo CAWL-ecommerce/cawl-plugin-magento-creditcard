@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace Worldline\CreditCard\Test\Integration\Payment;
+namespace Cawl\CreditCard\Test\Integration\Payment;
 
 use Magento\Customer\Model\Session;
 use Magento\Framework\App\Request\Http as HttpRequest;
@@ -9,11 +9,11 @@ use Magento\Framework\App\Request\HttpFactory as HttpRequestFactory;
 use Magento\Quote\Model\ResourceModel\Quote\Payment\CollectionFactory as QuotePaymentCollectionFactory;
 use Magento\TestFramework\Helper\Bootstrap;
 use PHPUnit\Framework\TestCase;
-use Worldline\CreditCard\Controller\Returns\ReturnThreeDSecureFactory;
-use Worldline\CreditCard\Controller\Returns\ReturnUrlFactory;
-use Worldline\CreditCard\Ui\ConfigProvider;
-use Worldline\PaymentCore\Api\QuoteResourceInterface;
-use Worldline\PaymentCore\Api\Test\Infrastructure\ServiceStubSwitcherInterface;
+use Cawl\CreditCard\Controller\Returns\ReturnThreeDSecureFactory;
+use Cawl\CreditCard\Controller\Returns\ReturnUrlFactory;
+use Cawl\CreditCard\Ui\ConfigProvider;
+use Cawl\PaymentCore\Api\QuoteResourceInterface;
+use Cawl\PaymentCore\Api\Test\Infrastructure\ServiceStubSwitcherInterface;
 
 /**
  * Test case about place order with invalid card

@@ -1,15 +1,15 @@
 <?php
 declare(strict_types=1);
 
-namespace Worldline\CreditCard\Service\HostedTokenization;
+namespace Cawl\CreditCard\Service\HostedTokenization;
 
 use Magento\Framework\Exception\LocalizedException;
 use OnlinePayments\Sdk\Domain\CreateHostedTokenizationRequest;
 use OnlinePayments\Sdk\Domain\CreateHostedTokenizationResponse;
 use Psr\Log\LoggerInterface;
-use Worldline\PaymentCore\Api\ClientProviderInterface;
-use Worldline\PaymentCore\Api\Config\WorldlineConfigInterface;
-use Worldline\CreditCard\Api\Service\HostedTokenization\CreateHostedTokenizationSessionServiceInterface;
+use Cawl\PaymentCore\Api\ClientProviderInterface;
+use Cawl\PaymentCore\Api\Config\WorldlineConfigInterface;
+use Cawl\CreditCard\Api\Service\HostedTokenization\CreateHostedTokenizationSessionServiceInterface;
 
 /**
  * @link https://support.direct.ingenico.com/en/documentation/api/reference/#tag/HostedTokenization/operation/CreateHostedTokenizationApi

@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace Worldline\CreditCard\Controller\Tokenizer;
+namespace Cawl\CreditCard\Controller\Tokenizer;
 
 use Magento\Framework\App\Action\Action;
 use Magento\Framework\App\Action\Context;
@@ -9,7 +9,7 @@ use Magento\Framework\App\Action\HttpGetActionInterface;
 use Magento\Framework\Controller\ResultFactory;
 use Magento\Framework\Controller\ResultInterface;
 use Magento\Store\Model\StoreManagerInterface;
-use Worldline\CreditCard\Ui\ConfigProvider\CreateHostedTokenizationResponseProcessor;
+use Cawl\CreditCard\Ui\ConfigProvider\CreateHostedTokenizationResponseProcessor;
 
 class Url extends Action implements HttpGetActionInterface
 {

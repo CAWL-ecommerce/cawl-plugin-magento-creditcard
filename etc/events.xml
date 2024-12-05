@@ -3,6 +3,6 @@
         xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
     <event name="payment_method_is_active">
         <observer name="Cawl_CreditCard::payment_method_is_active"
-                  instance="Worldline\CreditCard\Observer\PaymentMethodIsActive" />
+                  instance="Cawl\CreditCard\Observer\PaymentMethodIsActive" />
     </event>
 </config>

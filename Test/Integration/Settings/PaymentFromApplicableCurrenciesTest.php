@@ -1,14 +1,14 @@
 <?php
 declare(strict_types=1);
 
-namespace Worldline\CreditCard\Test\Integration\Settings;
+namespace Cawl\CreditCard\Test\Integration\Settings;
 
 use Magento\Payment\Model\MethodList;
 use Magento\Quote\Api\Data\CartInterface;
 use Magento\Quote\Model\ResourceModel\Quote\CollectionFactory as QuoteCollectionFactory;
 use Magento\TestFramework\Helper\Bootstrap;
 use PHPUnit\Framework\TestCase;
-use Worldline\CreditCard\Ui\ConfigProvider;
+use Cawl\CreditCard\Ui\ConfigProvider;
 
 /**
  * Test cases for configuration "Payment from Applicable Currencies"

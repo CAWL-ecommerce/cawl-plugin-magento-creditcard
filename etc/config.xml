@@ -4,7 +4,7 @@
     <default>
         <payment>
             <worldline_cc>
-                <model>Worldline\CreditCard\Model\Method\Adapter\Virtual</model>
+                <model>Cawl\CreditCard\Model\Method\Adapter\Virtual</model>
                 <allow_specific_currency>0</allow_specific_currency>
                 <allow_specific_customer_group>0</allow_specific_customer_group>
                 <allowspecific>0</allowspecific>
@@ -39,7 +39,7 @@
                 <group>worldline_group</group>
             </worldline_cc>
             <worldline_cc_vault>
-                <model>Worldline\CreditCard\Model\Method\Vault\CCVault\Virtual</model>
+                <model>Cawl\CreditCard\Model\Method\Vault\CCVault\Virtual</model>
                 <active>0</active>
                 <title>Stored Cards (Cawl Online Payments)</title>
                 <group>worldline_group</group>

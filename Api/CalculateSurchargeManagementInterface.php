@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace Worldline\CreditCard\Api;
+namespace Cawl\CreditCard\Api;
 
 interface CalculateSurchargeManagementInterface
 {

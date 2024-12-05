@@ -1,13 +1,13 @@
 <?php
 declare(strict_types=1);
 
-namespace Worldline\CreditCard\Observer;
+namespace Cawl\CreditCard\Observer;
 
 use Magento\Framework\Event\Observer;
 use Magento\Framework\Event\ObserverInterface;
-use Worldline\CreditCard\Gateway\Config\Config;
-use Worldline\CreditCard\Ui\ConfigProvider;
-use Worldline\PaymentCore\Api\AvailableMethodCheckerInterface;
+use Cawl\CreditCard\Gateway\Config\Config;
+use Cawl\CreditCard\Ui\ConfigProvider;
+use Cawl\PaymentCore\Api\AvailableMethodCheckerInterface;
 
 class PaymentMethodIsActive implements ObserverInterface
 {

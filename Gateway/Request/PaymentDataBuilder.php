@@ -1,11 +1,11 @@
 <?php
 declare(strict_types=1);
 
-namespace Worldline\CreditCard\Gateway\Request;
+namespace Cawl\CreditCard\Gateway\Request;
 
 use Magento\Payment\Gateway\Request\BuilderInterface;
-use Worldline\PaymentCore\Api\Payment\PaymentIdFormatterInterface;
-use Worldline\PaymentCore\Api\SubjectReaderInterface;
+use Cawl\PaymentCore\Api\Payment\PaymentIdFormatterInterface;
+use Cawl\PaymentCore\Api\SubjectReaderInterface;
 
 class PaymentDataBuilder implements BuilderInterface
 {

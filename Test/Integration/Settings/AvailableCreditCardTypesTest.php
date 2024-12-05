@@ -1,17 +1,17 @@
 <?php
 declare(strict_types=1);
 
-namespace Worldline\CreditCard\Test\Integration\Settings;
+namespace Cawl\CreditCard\Test\Integration\Settings;
 
 use Magento\Framework\App\Config\ReinitableConfigInterface;
 use Magento\Framework\App\Config\Storage\WriterInterface;
 use Magento\Quote\Api\Data\CartInterface;
 use Magento\TestFramework\Helper\Bootstrap;
 use PHPUnit\Framework\TestCase;
-use Worldline\CreditCard\Ui\ConfigProvider;
-use Worldline\CreditCard\Ui\PaymentIconsProvider;
-use Worldline\PaymentCore\Api\QuoteResourceInterface;
-use Worldline\PaymentCore\Api\Test\Infrastructure\ServiceStubSwitcherInterface;
+use Cawl\CreditCard\Ui\ConfigProvider;
+use Cawl\CreditCard\Ui\PaymentIconsProvider;
+use Cawl\PaymentCore\Api\QuoteResourceInterface;
+use Cawl\PaymentCore\Api\Test\Infrastructure\ServiceStubSwitcherInterface;
 
 /**
  * Test cases for configuration "Available Credit Card Types"
