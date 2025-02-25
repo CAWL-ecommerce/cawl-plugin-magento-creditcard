@@ -10,9 +10,9 @@ use Cawl\PaymentCore\Api\Config\WorldlineConfigInterface;
 class Head extends Template
 {
     private const PROD_URL
-        = "https://payment.preprod.ca.cawl-solutions.fr/hostedtokenization/js/client/tokenizer.min.js";
+        = "https://payment.preprod.cawl-solutions.fr/hostedtokenization/js/client/tokenizer.min.js";
     private const TEST_URL
-        = "https://payment.ca.cawl-solutions.fr/hostedtokenization/js/client/tokenizer.min.js";
+        = "https://payment.cawl-solutions.fr/hostedtokenization/js/client/tokenizer.min.js";
 
     /**
      * @var WorldlineConfigInterface
