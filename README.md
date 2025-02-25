@@ -11,6 +11,9 @@ This solution is also included into [main plugin for adobe commerce](https://git
 
 ### Change log:
 
+#### 1.1.1
+- Updated payment gateway API base URL
+
 #### 1.1.0
 - Fixed validation for HTML template ID configuration. It is no longer required to have extension on HTML templates.
 
