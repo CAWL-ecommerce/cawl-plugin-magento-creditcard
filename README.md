@@ -11,6 +11,9 @@ This solution is also included into [main plugin for adobe commerce](https://git
 
 ### Change log:
 
+#### 1.1.2
+- Update the core CAWL module to version 1.1.2
+
 #### 1.1.1
 - Updated payment gateway API base URL
 
