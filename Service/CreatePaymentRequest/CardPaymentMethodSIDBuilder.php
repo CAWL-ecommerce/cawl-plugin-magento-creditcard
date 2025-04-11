@@ -20,6 +20,7 @@ class CardPaymentMethodSIDBuilder
 {
     public const RETURN_URL = 'wl_creditcard/returns/returnThreeDSecure';
     public const SINGLE_AMOUNT_USE_CASE = 'single-amount';
+    const MAX_SUPPORTED_NUMBER_OF_ITEMS = 99;
 
     /**
      * @var Config
@@ -88,7 +89,8 @@ class CardPaymentMethodSIDBuilder
             $paymentProduct130ThreeDSecure = new PaymentProduct130SpecificThreeDSecure();
 
             $paymentProduct130ThreeDSecure->setUsecase(self::SINGLE_AMOUNT_USE_CASE);
-            $paymentProduct130ThreeDSecure->setNumberOfItems($quote->getItemsQty());
+            $numberOfItems = $quote->getItemsQty() <= self::MAX_SUPPORTED_NUMBER_OF_ITEMS ? $quote->getItemsQty() : self::MAX_SUPPORTED_NUMBER_OF_ITEMS;
+            $paymentProduct130ThreeDSecure->setNumberOfItems($numberOfItems);
 
             if (!$this->generalSettings->isAuthExemptionEnabled($storeId)) {
                 $paymentProduct130ThreeDSecure->setAcquirerExemption(false);
