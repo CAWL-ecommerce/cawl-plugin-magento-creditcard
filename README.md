@@ -11,6 +11,9 @@ This solution is also included into [main plugin for adobe commerce](https://git
 
 ### Change log:
 
+#### 1.1.4
+- Update plugin translations
+
 #### 1.1.3
 - Added 3DS exemption types to the plugin
 
