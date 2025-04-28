@@ -11,6 +11,9 @@ This solution is also included into [main plugin for adobe commerce](https://git
 
 ### Change log:
 
+#### 1.1.6
+- Update the core CAWL module to version 1.1.6
+
 #### 1.1.5
 - Update the core CAWL module to version 1.1.5
 
