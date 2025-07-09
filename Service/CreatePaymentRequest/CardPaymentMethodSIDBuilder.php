@@ -69,7 +69,9 @@ class CardPaymentMethodSIDBuilder
         $cardPaymentMethodSpecificInput->setReturnUrl($this->generalSettings->getReturnUrl(self::RETURN_URL, $storeId));
         $cardPaymentMethodSpecificInput->setThreeDSecure($this->threeDSecureDataBuilder->build($quote, true));
         $cardPaymentMethodSpecificInput->setAuthorizationMode($this->config->getAuthorizationMode($storeId));
-        $cardPaymentMethodSpecificInput->setPaymentProduct130SpecificInput($this->buildPaymentProduct130SpecificInput($quote));
+        $cardPaymentMethodSpecificInput->setPaymentProduct130SpecificInput(
+            $this->buildPaymentProduct130SpecificInput($quote)
+        );
         $cardPaymentMethodSpecificInput->setToken(
             $quote->getPayment()->getAdditionalInformation(PaymentDataBuilder::TOKEN_ID)
         );
@@ -89,7 +91,8 @@ class CardPaymentMethodSIDBuilder
             $paymentProduct130ThreeDSecure = new PaymentProduct130SpecificThreeDSecure();
 
             $paymentProduct130ThreeDSecure->setUsecase(self::SINGLE_AMOUNT_USE_CASE);
-            $numberOfItems = $quote->getItemsQty() <= self::MAX_SUPPORTED_NUMBER_OF_ITEMS ? $quote->getItemsQty() : self::MAX_SUPPORTED_NUMBER_OF_ITEMS;
+            $numberOfItems = $quote->getItemsQty() <= self::MAX_SUPPORTED_NUMBER_OF_ITEMS ?
+                $quote->getItemsQty() : self::MAX_SUPPORTED_NUMBER_OF_ITEMS;
             $paymentProduct130ThreeDSecure->setNumberOfItems($numberOfItems);
 
             if (!$this->generalSettings->isAuthExemptionEnabled($storeId)) {
