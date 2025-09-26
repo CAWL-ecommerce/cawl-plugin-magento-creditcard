@@ -11,6 +11,9 @@ This solution is also included into [main plugin for adobe commerce](https://git
 
 ### Change log:
 
+### 1.1.15
+- Allow order creation on amount discrepancies
+
 ### 1.1.14
 - Add quote ID to request payload
 - Fix wrong IP address being sent on checkout
