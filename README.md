@@ -11,6 +11,9 @@ This solution is also included into [main plugin for adobe commerce](https://git
 
 ### Change log:
 
+#### 1.1.18
+- Add new payment method: Pledg
+
 #### 1.1.17
 - Remove MealVouchers configuration from hosted checkout 
 - Fix mobile payment method information not being shown in order details
