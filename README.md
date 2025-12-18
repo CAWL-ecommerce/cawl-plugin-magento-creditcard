@@ -11,6 +11,9 @@ This solution is also included into [main plugin for adobe commerce](https://git
 
 ### Change log:
 
+#### 1.1.21
+- Fix issues with amount discrepancy feature
+
 #### 1.1.20
 - Add configuration for automatic registration of webhook URLs
 
