@@ -11,6 +11,9 @@ This solution is also included into [main plugin for adobe commerce](https://git
 
 ### Change log:
 
+#### 1.1.22
+- Fix decimal quantity amount for CB 3DSecure object
+
 #### 1.1.21
 - Fix issues with amount discrepancy feature
 
