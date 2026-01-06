@@ -12,16 +12,16 @@ This solution is also included into [main plugin for adobe commerce](https://git
 ### Change log:
 
 #### 1.1.22
-- Fix decimal quantity amount for CB 3DSecure object
+- Fix: Do not allow usage of decimals in the object cardPaymentMethodSpecificInput.paymentProduct130SpecificInput.threeDSecure.numberOfItems
 
 #### 1.1.21
 - Fix issues with amount discrepancy feature
 
 #### 1.1.20
-- Add configuration for automatic registration of webhook URLs
+- Added: Possibility to auto-include primary webhooks URL in the payload of payment request, and to configure up to 4 additional endpoints.
 
 #### 1.1.19
-- Manage exemptions for french markets
+- Improved: Data mapping to flag correctly exemptions requests to 3-D Secure.
 
 #### 1.1.18
 - Add new payment method: Pledg
