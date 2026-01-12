@@ -11,6 +11,10 @@ This solution is also included into [main plugin for adobe commerce](https://git
 
 ### Change log:
 
+### 1.1.24
+- Remove Mealvouchers logo from checkout page when using "Hosted Checkout (redirect to Worldline)"
+- Version 1.1.23 is skipped to make the CC module version equal to the CAWL module version
+
 #### 1.1.22
 - Fix: Do not allow usage of decimals in the object cardPaymentMethodSpecificInput.paymentProduct130SpecificInput.threeDSecure.numberOfItems
 
