@@ -9,6 +9,7 @@ use OnlinePayments\Sdk\Domain\CreateHostedTokenizationResponse;
 use Psr\Log\LoggerInterface;
 use Cawl\PaymentCore\Api\ClientProviderInterface;
 use Cawl\PaymentCore\Api\Config\WorldlineConfigInterface;
+use Cawl\PaymentCore\Api\Service\Services\StoreConnectionServiceInterface;
 use Cawl\CreditCard\Api\Service\HostedTokenization\CreateHostedTokenizationSessionServiceInterface;
 
 /**
@@ -31,14 +32,21 @@ class CreateHostedTokenizationSessionService implements CreateHostedTokenization
      */
     private $logger;
 
+    /**
+     * @var StoreConnectionServiceInterface
+     */
+    private $storeConnectionService;
+
     public function __construct(
         WorldlineConfigInterface $worldlineConfig,
         ClientProviderInterface $clientProvider,
-        LoggerInterface $logger
+        LoggerInterface $logger,
+        StoreConnectionServiceInterface $storeConnectionService
     ) {
         $this->worldlineConfig = $worldlineConfig;
         $this->clientProvider = $clientProvider;
         $this->logger = $logger;
+        $this->storeConnectionService = $storeConnectionService;
     }
 
     /**
@@ -53,6 +61,10 @@ class CreateHostedTokenizationSessionService implements CreateHostedTokenization
         CreateHostedTokenizationRequest $createHostedTokenizationRequest,
         ?int $storeId = null
     ): CreateHostedTokenizationResponse {
+        if (!$this->storeConnectionService->execute((int) $storeId)) {
+            throw new LocalizedException(__('CAWL is not connected for this store.'));
+        }
+
         try {
             return $this->clientProvider->getClient($storeId)
                 ->merchant($this->worldlineConfig->getMerchantId($storeId))
